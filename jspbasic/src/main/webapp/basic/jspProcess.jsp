@@ -9,7 +9,7 @@
 		Service 페이지가 최초로 load될 때 호출된다.
 		페이지에 서비스를 수행하기 전에 초기화할 루틴을 삽입한다.
 		혹은 초기 값을 셋팅해주는, 객체의 생성자 다음으로 동작하는 것 
-		뭔가를 생성하거나 하는 것은 아님 
+		뭔가를 생성하거나 하는 것은 아님
 		*/
 
 	}
@@ -19,7 +19,7 @@
 		/*
 		Service 페이지의 instance가 사라지는 시점에 호출된다.
 		해당 페이지가 변경되어 새로이 load될 필요가 있을 때 이미 load된 instance는 
-		destroy가 호출되고 새로운 instance의 init이 호출된다.
+		destroy가 호출되고 새로운 instance의 ßInit이 호출된다.
 		*/
 	}%>
 <!DOCTYPE html>
