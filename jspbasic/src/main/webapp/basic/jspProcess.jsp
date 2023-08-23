@@ -1,9 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<%!private int num1 = 0;
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
 
-	public void jspinit() {
+	<%!
+	
+	private int num1 = 0;
+
+	public void jspInit() {
 		System.out.println("jspinit() 호출");
 		/*
 		Service 페이지가 최초로 load될 때 호출된다.
@@ -14,7 +24,7 @@
 
 	}
 
-	public void jspDestory() {
+	public void jspDestroy() {
 		System.out.println("jspDestory() 호출");
 		/*
 		Service 페이지의 instance가 사라지는 시점에 호출된다.
@@ -22,22 +32,19 @@
 		destroy가 호출되고 새로운 instance의 ßInit이 호출된다.
 		*/
 	}%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	<%
-int num2 = 0;
-num1++;
-num2++;
+
+<%
+        int num2 = 0;
+        num1++;
+        num2++;
+        System.out.println("num1 = "+num1);
+        System.out.println("num2 = "+num2);
+
 %>
 
 	<ul>
 		<li>num1 : <%=num1%></li>
-		<li>num1 : <%=num1%></li>
+		<li>num2 : <%=num2%></li>
 	</ul>
 </body>
 </html>
