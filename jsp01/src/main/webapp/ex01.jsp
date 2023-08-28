@@ -1,17 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Random number </title>
+<title>Random number</title>
 </head>
 <body>
-<br><b>Server 처리 값</b></br>
-Now is <%= new java.util.Date() %>
-<br>1번 : <%= new java.util.Random().nextInt(100) %> </br>
-<br>2번 : <%= new java.util.Random().nextInt(100) %> </br>
-<br>3번 : <%= new java.util.Random().nextInt(100) %> </br>
+	<br>
+	<b>Server 처리 값</b>
+	</br> Now is
+	<%=new java.util.Date()%>
+	<br>1번 :
+	<%=new java.util.Random().nextInt(100)%>
+	</br>
+	<br>2번 :
+	<%=new java.util.Random().nextInt(100)%>
+	</br>
+	<br>3번 :
+	<%=new java.util.Random().nextInt(100)%>
+	</br>
 </body>
 </html>
 

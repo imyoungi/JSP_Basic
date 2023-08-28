@@ -1,3 +1,4 @@
+<%@page import="java.util.Enumeration"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,8 +9,6 @@
 </head>
 <body>
 	<%
-	
-	
 	Enumeration enumData = request.getHeaderNames();
 	while (enumData.hasMoreElements()) {
 		String headerName = (String) enumData.nextElement();
