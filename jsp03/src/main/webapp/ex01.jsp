@@ -17,5 +17,6 @@
 컨텍스트 경로 :<%=request.getContextPath() %><br>
 서버이름 : <%=request.getServerName() %><br>
 서버포트 : <%=request.getServerPort() %><br>
+
 </body>
 </html>

@@ -27,14 +27,19 @@
 	-->
 </head>
 <body>
-<%
-     Enumeration enumData = application.getInitParameterNames();
-     while(enumData.hasMoreElements()){
-    	 String initParamName = (String) enumData.nextElement();
-    	 String initValue = application.getInitParameter(initParamName);
-    	 System.out.println(initParamName+" : " + initValue);
-     }
-%>
+	<%
+	Enumeration enumData = application.getInitParameterNames();
+	while (enumData.hasMoreElements()) {
+		String initParamName = (String) enumData.nextElement();
+		String initValue = application.getInitParameter(initParamName);
+		System.out.println(initParamName + " : " + initValue);
+	}
+	%>
+	applicaton 객체 예제<br> 
+	초기화 파라미터 확인<br> 
+	서버정보 :<%= application.getServerInfo() %><br>
+	서블릿 메이저 버전 : <%= application.getMajorVersion() %><br>
+	서블릿 마이너 버전 : <%= application.getMinorVersion() %>
 
 </body>
 </html>
