@@ -33,8 +33,13 @@ Cookie cookie2 = new Cookie("age", "25");
 /*
 여기서 쿠키에 경로를 지정해줄 수 있다.
 최상위 경로(getContextPath())에서 path1 이라는 폴더로 설정
-cookie1과 cookie2 다른 경로로 기억하고 싶다면 따로 경로 설정 가능
+path1쪽으로 요청할 때 사용하도록 등록된 것 
+jsp04/cookie/viewCookie에선 age쿠키만 확인 가능 
 
+이런 느낌으로 생각해보자(쿠키 경로 개념)
+서비스 쿠폰 하나를 발급해줬는데 가게가 나눠져있어 카페/음식점
+카페에만 유효할 수도, 음식점에서만 유효할 수도, 둘 다 유효할 수도 있는 이런 개념으로 설정하고 싶을 때,
+쿠키에 path를 설정해줄 수 있다. name쿠키는 카페에만, age쿠키는 음식점에만 유효 이런 식으로 구분한 것 
 */
 cookie1.setPath(request.getContextPath()+"path1");
 
